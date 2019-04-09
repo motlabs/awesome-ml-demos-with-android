@@ -17,12 +17,12 @@ This repository provides several guides and examples to utilize the Tensorflow L
 
 ## 목차
 
-- [모바일 머신러닝이 무엇인가요?](#모바일-머신러닝이-무엇인가요?)
+- [모바일 머신러닝이 무엇인가요?](#모바일-머신러닝이-무엇인가요-?)
 - [Android를 위한 ML 프레임워크와 도구들](#Android를-위한-ML-프레임워크와-도구들)
   - [Tensorflow Lite 알아보기](#Tensorflow-Lite-알아보기)
   - [ML Kit 알아보기](#ML-Kit-알아보기)
 - [모바일 머신러닝 개발 프로세스](#모바일-머신러닝-개발-프로세스)
-- [함께 만들어 보는 모바일 머신러닝 앱!](#함께-만들어-보는-모바일-머신러닝-앱!)
+- [함께 만들어 보는 모바일 머신러닝 앱!](#함께-만들어-보는-모바일-머신러닝-앱-!)
   - 무엇을 만드나요?
   - Tensorflow Lite 실행 흐름도
   - ML Kit 실행 흐름도
@@ -149,4 +149,11 @@ This repository provides several guides and examples to utilize the Tensorflow L
 2. Android Studio SDK 버전 26 이상
 3. Android NDK 버전 14 이상
 4. API Level 26 이상의 테스트 기기
+
+
+
+3. 모델의 정보와 입/출력에 대해 파악합니다.
+
+<p align="center"><br/><img src="common/tflite-understanding-model.png"/>
+</p>
 
