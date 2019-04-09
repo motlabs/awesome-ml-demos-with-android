@@ -52,11 +52,19 @@ This repository provides several guides and examples to utilize the Tensorflow L
 
 - On-Device **(Serverless)**
 
-  기기 내부의 메모리, CPU/GPU 자원등을 사용하여 머신러닝 추론 결과를 얻는 방법입니다.
+    기기 내부의 메모리, CPU/GPU 자원등을 사용하여 머신러닝 추론 결과를 얻는 방법입니다.
 
 - Cloud **(Server)**
 
-  클라우드 혹은 온프레미스 서버를 통해 머신러닝 추론 결과를 얻는 방법입니다. 퍼블릭 클라우드의 편리한 ML PaaS 엔진들을 활용하면 쉽게 클라우드를 통해 머신러닝 추론을 하는 환경을 만들어볼 수 있습니다. IaaS 단 부터 End-to-End 머신러닝을 위한 플랫폼을 구축하기도 합니다.
+    클라우드 혹은 온프레미스 서버를 통해 머신러닝 추론 결과를 얻는 방법입니다. 퍼블릭 클라우드의 편리한 ML PaaS(Platform-as-a-Service) 엔진들을 활용하면 쉽게 클라우드를 통해 머신러닝 추론을 하는 환경을 만들어볼 수 있습니다. IaaS(Infra-as-a-Service) 단 부터 End-to-End 머신러닝을 위한 플랫폼을 구축하기도 합니다.
+
+  - [Amazone Sagemaker](https://aws.amazon.com/ko/sagemaker/)
+
+  - [Azure Machine Learning Studio](https://studio.azureml.net/)
+
+  - [Google Cloud Machine Learning Engine](https://cloud.google.com/ml-engine/)
+
+    
 
 
 ## Android를 위한 ML 프레임워크와 도구들
