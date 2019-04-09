@@ -53,6 +53,7 @@ This repository provides several guides and examples to utilize the Tensorflow L
 <p align="center">
 <img src="common/what-is-mobile-ml.png"/>
 </p>
+
 - On-Device **(Serverless)**
 
     기기 내부의 메모리, CPU/GPU 자원등을 사용하여 머신러닝 추론 결과를 얻는 방법입니다.
@@ -61,9 +62,9 @@ This repository provides several guides and examples to utilize the Tensorflow L
 
     클라우드 혹은 온프레미스 서버를 통해 머신러닝 추론 결과를 얻는 방법입니다. 퍼블릭 클라우드의 편리한 ML PaaS(Platform-as-a-Service) 엔진들을 활용하면 쉽게 클라우드를 통해 머신러닝 추론을 하는 환경을 만들어볼 수 있습니다. IaaS(Infra-as-a-Service) 단 부터 End-to-End 머신러닝을 위한 플랫폼을 구축하기도 합니다.
 
-  **참고**
+  **클라우드별 MLaaS(Machine-Learning-as-a-Service)**
 
-  - [Amazone Sagemaker](https://aws.amazon.com/ko/sagemaker/)
+  - [Amazon Sagemaker](https://aws.amazon.com/ko/sagemaker/)
 
   - [Azure Machine Learning Studio](https://studio.azureml.net/)
 
@@ -102,3 +103,26 @@ This repository provides several guides and examples to utilize the Tensorflow L
 
     경량화 된 딥러닝 모델을 모바일 프로젝트 내에 이식하여 모델 추론과 Business Logic / Presentation Logic 표현을 위한 시스템 아키텍처를 설계합니다.
 
+
+
+## 함께 만들어 보는 모바일 머신러닝 앱!
+
+   Tensorflow Lite과 ML Kit을 활용한 간단한 데모앱을 만드는 과정을 되짚어 보며 모바일 머신러닝 앱이 만들어지는 과정에 대해 알아보도록 하겠습니다. 본 과정은 **Droid Knights 2019** (2019.04.05) 에서 이루어졌던 Live Demo를 기반으로 합니다.
+
+ 
+
+<p align="center">
+  <a href = "https://www.slideshare.net/ShinJeongah/droid-knights-2019-tensorflow-lite-ml-kit-mobile-gpu-140070058">
+    <img src="common/droid_knights_title.png" width="500"/><br/><br/>
+    <b>슬라이드 바로 가기</b>
+  </a>
+</p>
+
+
+
+### 무엇을 만드나요?
+
+| 사용 모델                                                    | DEMO                                                         | 설명                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <p align="center"><img src="common/demo_finger_pose.png" width="200"/></p> | <p align="center"><img src="demo/demo_tflite_only.gif" width="200"/></p> | <p align="center"><img src="common/demo_robot.png" width="400"/></p> |
+| <p align="center"><img src="common/demo_face_classification.png" width="200"/> | <p align="center"><img src="demo/demo_mlkit_only.gif" width="200"/></p> | <p align="center"><img src="common/demo_android.png" width="400"/></p> |
