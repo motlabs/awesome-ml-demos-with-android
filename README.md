@@ -19,12 +19,13 @@ This repository provides several guides and examples to utilize the Tensorflow L
 
 - [모바일 머신러닝이 무엇인가요?](#모바일-머신러닝이-무엇인가요?)
 - [Android를 위한 ML 프레임워크와 도구들](#Android를-위한-ML-프레임워크와-도구들)
-  - [Tensorflow Lite](#Tensorflow-Lite)
-  - [ML Kit](#ML-Kit)
-- [함께 만들어 보는 모바일 머신러닝 앱!](함께 만들어 보는 모바일 머신러닝 앱!)
+  - [Tensorflow Lite 알아보기](#Tensorflow-Lite-알아보기)
+  - [ML Kit 알아보기](#ML-Kit-알아보기)
+- [모바일 머신러닝 개발 프로세스](#모바일-머신러닝-개발-프로세스)
+- [함께 만들어 보는 모바일 머신러닝 앱!](#함께 만들어 보는 모바일 머신러닝 앱!)
   - 무엇을 만드나요?
-  - [Tensorflow Lite 실행 흐름도](#Tensorflow-Lite-실행-흐름도)
-  - [ML Kit 실행 흐름도](#ML-Kit-실행-흐름도)
+  - Tensorflow Lite 실행 흐름도
+  - ML Kit 실행 흐름도
 - [모델 실행 예제](#모델-실행-예제)
   - [Object Detection](#Object-Detection)
     - Quantized COCO SSD MobileNet v1
@@ -41,6 +42,21 @@ This repository provides several guides and examples to utilize the Tensorflow L
   - [Unit Test](#Unit-Test)
 - [See also](#See-Also)
 
+
+
+## 모바일 머신러닝이 무엇인가요?
+<p align="center">
+<img src="common/what-is-mobile-ml.png"/>
+</p>
+모바일에서 머신러닝 추론을 할 수 있는 방법은 크게 두 가지로 나뉩니다.
+
+- On-Device **(Serverless)**
+
+  기기 내부의 메모리, CPU/GPU 자원등을 사용하여 머신러닝 추론 결과를 얻는 방법입니다.
+
+- Cloud **(Server)**
+
+  클라우드 혹은 온프레미스 서버를 통해 머신러닝 추론 결과를 얻는 방법입니다. 퍼블릭 클라우드의 편리한 ML PaaS 엔진들을 활용하면 쉽게 클라우드를 통해 머신러닝 추론을 하는 환경을 만들어볼 수 있습니다. IaaS 단 부터 End-to-End 머신러닝을 위한 플랫폼을 구축하기도 합니다.
 
 
 ## Android를 위한 ML 프레임워크와 도구들
