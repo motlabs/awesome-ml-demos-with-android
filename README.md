@@ -11,7 +11,7 @@
 
 This repository provides several guides and examples to utilize the Tensorflow Lite and ML Kit in an Android environment. Since the basic language support is Korean, plz click into an option below if you want to translate to another languages!
 
-<img src="common/korean-icon.png" width="32" height="32"/>[![Korean Translation Support](https://img.shields.io/badge/Korean-available-9cf.svg?style=flat)](https://github.com/motlabs/awesome-ml-demos-with-android/blob/master/README.md)<img src="common/english-icon.png" width="32" height="32"/>[![English Translation Support](https://img.shields.io/badge/English-preparing-c6a4be.svg?style=flat)](https://github.com/motlabs/awesome-ml-demos-with-android/blob/master/README.md)<img src="common/chinese-icon.png" width="32" height="32"/>[![Chinese Translation Support](https://img.shields.io/badge/Chinese-preparing-c6a4be.svg?style=flat)](https://github.com/motlabs/awesome-ml-demos-with-android/blob/master/README.md)
+<img src="common/korean-icon.png" width="32" height="32"/>[![Korean Translation Support](https://img.shields.io/badge/Korean-available-9cf.svg?style=flat)](https://github.com/motlabs/awesome-ml-demos-with-android/blob/master/README.md) <img src="common/english-icon.png" width="32" height="32"/>[![English Translation Support](https://img.shields.io/badge/English-preparing-c6a4be.svg?style=flat)](https://github.com/motlabs/awesome-ml-demos-with-android/blob/master/README.md) <img src="common/chinese-icon.png" width="32" height="32"/>[![Chinese Translation Support](https://img.shields.io/badge/Chinese-preparing-c6a4be.svg?style=flat)](https://github.com/motlabs/awesome-ml-demos-with-android/blob/master/README.md)
 
 
 
@@ -45,11 +45,14 @@ This repository provides several guides and examples to utilize the Tensorflow L
 
 
 ## 모바일 머신러닝이 무엇인가요?
+
+모바일에서 머신러닝 추론을 할 수 있는 방법은 크게 두 가지로 나뉩니다.
+
+
+
 <p align="center">
 <img src="common/what-is-mobile-ml.png"/>
 </p>
-모바일에서 머신러닝 추론을 할 수 있는 방법은 크게 두 가지로 나뉩니다.
-
 - On-Device **(Serverless)**
 
     기기 내부의 메모리, CPU/GPU 자원등을 사용하여 머신러닝 추론 결과를 얻는 방법입니다.
@@ -57,6 +60,8 @@ This repository provides several guides and examples to utilize the Tensorflow L
 - Cloud **(Server)**
 
     클라우드 혹은 온프레미스 서버를 통해 머신러닝 추론 결과를 얻는 방법입니다. 퍼블릭 클라우드의 편리한 ML PaaS(Platform-as-a-Service) 엔진들을 활용하면 쉽게 클라우드를 통해 머신러닝 추론을 하는 환경을 만들어볼 수 있습니다. IaaS(Infra-as-a-Service) 단 부터 End-to-End 머신러닝을 위한 플랫폼을 구축하기도 합니다.
+
+  **참고**
 
   - [Amazone Sagemaker](https://aws.amazon.com/ko/sagemaker/)
 
@@ -74,3 +79,26 @@ This repository provides several guides and examples to utilize the Tensorflow L
 - [Caffe2Go](https://caffe2.ai/docs/mobile-integration.html)
 - [Mace](https://mace.readthedocs.io/en/latest/user_guide/basic_usage.html)
 - [fritz](https://www.fritz.ai/)
+
+
+
+## 모바일 머신러닝 개발 프로세스
+
+**On-Device** 모바일 머신러닝 앱 개발을 하기 위한 프로세스는 아래와 같습니다.
+
+<p align="center">
+<img src="common/mobile-ml-process.png"/>
+</p>
+
+- Training
+
+    모델을 개발하고, 데이터셋을 통해 학습시킵니다. 모바일에서 가용할 수 있는 딥러닝 모델 종류에는 **FNN** (Feedforward Neural Network), **CNN** (Convolutional Neural Network) 가 대표적입니다. 
+
+- Conversion
+
+    모바일에 이식될 수 있도록 딥러닝 모델을 경량화 합니다. 대개 각기 프레임워크별로 모델을 경량화할 수 있는 converter나 exporter를 지니고 있습니다.
+
+- Inference
+
+    경량화 된 딥러닝 모델을 모바일 프로젝트 내에 이식하여 모델 추론과 Business Logic / Presentation Logic 표현을 위한 시스템 아키텍처를 설계합니다.
+
