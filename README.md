@@ -22,7 +22,7 @@ This repository provides several guides and examples to utilize the Tensorflow L
   - [Tensorflow Lite 알아보기](#Tensorflow-Lite-알아보기)
   - [ML Kit 알아보기](#ML-Kit-알아보기)
 - [모바일 머신러닝 개발 프로세스](#모바일-머신러닝-개발-프로세스)
-- [함께 만들어 보는 모바일 머신러닝 앱!](#함께 만들어 보는 모바일 머신러닝 앱!)
+- [함께 만들어 보는 모바일 머신러닝 앱!](#함께-만들어-보는-모바일-머신러닝-앱!)
   - 무엇을 만드나요?
   - Tensorflow Lite 실행 흐름도
   - ML Kit 실행 흐름도
@@ -126,3 +126,27 @@ This repository provides several guides and examples to utilize the Tensorflow L
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <p align="center"><img src="common/demo_finger_pose.png" width="200"/></p> | <p align="center"><img src="demo/demo_tflite_only.gif" width="200"/></p> | <p align="center"><img src="common/demo_robot.png" width="400"/></p> |
 | <p align="center"><img src="common/demo_face_classification.png" width="200"/> | <p align="center"><img src="demo/demo_mlkit_only.gif" width="200"/></p> | <p align="center"><img src="common/demo_android.png" width="400"/></p> |
+
+
+
+### Tensorflow Lite 실행 흐름도
+
+
+
+1. Frozen Graph (확정된 모델 변화본의 기록)를 통해 Finger Pose Estimation 모델의 경량화 파일(.tflite)을 추출합니다.
+
+<p align="center">
+<img src="common/tflite-model-conversion.png"/>
+</p>
+
+
+2. Tensorflow Lite 추론을 위한 안드로이드 프로젝트 환경을 세팅합니다.
+
+<p align="center"><br/><img src="common/tflite-android-settings.png" height="200"/>
+</p>
+
+1. Android Studio 3.0 이상
+2. Android Studio SDK 버전 26 이상
+3. Android NDK 버전 14 이상
+4. API Level 26 이상의 테스트 기기
+
